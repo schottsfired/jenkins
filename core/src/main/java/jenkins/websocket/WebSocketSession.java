@@ -55,7 +55,7 @@ public abstract class WebSocketSession {
      * Certain services may have their own “keep alive” semantics,
      * but for example {@link hudson.remoting.PingThread} may be too infrequent.
      */
-    private static long PING_INTERVAL_SECONDS = SystemProperties.getLong("jenkins.websocket.pingInterval", 30L);
+    private static long PING_INTERVAL_SECONDS = SystemProperties.getLong("jenkins.websocket.pingInterval", 60L);
 
     private static final Logger LOGGER = Logger.getLogger(WebSocketSession.class.getName());
 
